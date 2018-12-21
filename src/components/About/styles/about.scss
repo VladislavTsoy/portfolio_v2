@@ -1,0 +1,70 @@
+@import '../../../styles/utilities';
+
+.about-wallpaper {
+    width: 100vw;
+    height: 70vh;
+    background-image: url('../../../images/pic2.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+}
+
+#about-overview {
+    width: 70vw;
+    margin-bottom: 100px;
+    .col-2 {
+        width: 90%;
+    }
+
+    .card-main-content {
+        font-size: 1.2em;
+    }
+}
+
+@include phone {
+    .about-wallpaper {
+        height: 40vh;
+    }
+    #about-overview {
+        width: 90vw;
+        margin-bottom: 120px;
+
+        .col-2 {
+            width: 90%;
+        }
+
+        .card-main-content {
+            font-size: .8em;
+        }
+    }
+}
+
+@include phone-land {
+    #about-overview {
+        width: 90vw;
+        margin-bottom: 120px;
+
+        .col-2 {
+            width: 90%;
+        }
+
+        .card-main-content {
+            font-size: 1em;
+        }
+    }
+}
+
+@include ipad {
+    #about-overview {
+        width: 90vw;
+        margin-bottom: 120px;
+
+        .col-2 {
+            width: 90%;
+        }
+
+        .card-main-content {
+            font-size: 1em;
+        }
+    }
+}

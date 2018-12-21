@@ -1,0 +1,61 @@
+$colors: (
+    primary: rgb(255,255,255),
+    secondary: #000,
+    terniary: #B0AFB2,
+    textcolor: rgb(40, 38, 51),
+    wallpaper: rgb(247, 248, 249)
+);
+
+@function color($color-name){
+    @return map-get($colors, $color-name)
+};
+
+@mixin phone {
+    @media only screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin phone-land {
+    @media only screen and (min-width: 481px) and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin ipad {
+    @media only screen and (min-width: 768px) and (max-width: 1140px){
+        @content
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+}
+
+.card-top {
+    height: 30px;
+    font-size: .7em;
+    letter-spacing: 1px;
+    font-family: 'menlo';
+    font-weight: 300;
+    text-transform: uppercase;
+    color: color(terniary);
+}
+
+@include phone {
+    .card-top {
+        font-size: .6em;
+    }
+}
+
+@include phone-land {
+    .card-top {
+        font-size: .6em;
+    }
+}
+
+

@@ -1,0 +1,29 @@
+@import '../../styles/utilities';
+
+#nba-wallpaper{
+    width: 100%;
+    height: 50vh;
+    background: url('https://s3-us-west-1.amazonaws.com/music-stream-vschool/lj.png');
+    background-size: cover;
+    background-position: center 50%;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+#nba-wallpaper-2 {
+    width: 100vw;
+    height: 130vh;
+    background: url('https://s3-us-west-1.amazonaws.com/music-stream-vschool/nba-1.png');
+    background-size: cover;
+}
+
+@include phone {
+    #nba-wallpaper-2 {
+        height: 280px;
+    }
+}
+
+@include ipad {
+    #nba-wallpaper-2 {
+        height: 600px;
+    }
+}

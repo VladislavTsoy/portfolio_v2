@@ -1,0 +1,43 @@
+@import '../../../styles/utilities';
+
+ 
+.design-scope{
+    font-family: 'Roboto';
+    padding-right: 20%;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.3;
+}
+
+#design-overview {
+    margin-bottom: 70px;
+}
+
+.design-img {
+    width: 80vw;
+    height: 200vh;
+    margin-left: auto;
+    margin-right: auto;
+    background: url('https://s3-us-west-1.amazonaws.com/music-stream-vschool/designs.png');
+    background-size: cover;
+}
+
+.img-1 {
+    position: relative;
+    left: 8vw;
+    top: -55vh;
+    z-index: 1;
+    width: 50vw;
+}
+
+.img-2 {
+    position: relative;
+    
+}
+
+.design-footer {
+    margin-top: 70px;
+}
+

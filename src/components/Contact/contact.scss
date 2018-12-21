@@ -1,0 +1,19 @@
+@import '../../styles/utilities';
+
+.contact-footer {
+    margin-top: 180px;
+}
+
+@include phone {
+    .contact-footer {
+        padding-top: 50px;
+        margin-top: 0px;
+    }
+}
+
+@include phone-land {
+    .contact-footer {
+        padding-top: 50px;
+        margin-top: 0px;
+    }
+}

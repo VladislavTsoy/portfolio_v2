@@ -1,0 +1,50 @@
+@import './utilities';
+
+.help-wrapper {
+    background-color: color(wallpaper);
+    margin: 70px 70px;
+    height: 200px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+        font-family: 'menlo';
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+}
+
+@include phone {
+    .help-wrapper {
+        margin-top: 120px;
+        .title {
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+}
+
+@include phone-land {
+    .help-wrapper {
+        .title {
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+}
+
+@include ipad {
+    .help-wrapper {
+        .title {
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+}
+
+

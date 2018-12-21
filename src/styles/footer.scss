@@ -1,0 +1,135 @@
+@import './utilities';
+
+// .home-footer-wrapper {
+//     position: absolute;
+//     width: 100%;
+//     bottom: 19vh;
+// }
+
+.footer-container {
+    padding-left: 90px;
+    width: 100%;
+    color: color(textcolor);
+
+    .mission-section {
+        display: inline-block;
+        height: 150px;
+        vertical-align: top;
+    }
+
+    .col-1 {
+        width: 7%;
+    }
+    .card-tag {
+        margin: 0;
+        font-size: .7em;
+        padding-top: 10px;
+        letter-spacing: 1px;
+        font-family: 'menlo';
+        font-weight: 500;
+        text-transform: uppercase;
+        color: color(textcolor);
+    }
+
+    .col-2 {
+        width: 45%;
+    }
+    .card-main-content,
+    .card-email-content {
+        font-size: 1.3em;
+        line-height: 1.1;
+        font-family: 'Roboto';
+        letter-spacing: 1px;
+        padding-right: 10%;
+        font-weight: 400;
+        color: color(textcolor);
+    }
+    .card-email-content{
+        text-decoration: underline;
+    }
+
+
+    .col-3 {
+        width: 15%;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Roboto';
+        padding-right: 20%;
+        text-decoration: underline;
+        font-size: .9em;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    .footer-links a {
+        color: color(textcolor);
+    }
+
+    .col-4 {
+        width: 15%;
+    }
+}
+
+@include phone{
+    .footer-container {
+        padding-left: 20px;
+        width: 90vw;
+
+        .card-tag {
+            font-size: .6em;
+        }
+
+        .col-2 {
+            width: 60%;
+        }
+
+        .card-main-content,
+        .card-email-content,
+        .footer-links {
+            font-size: .8em;
+        }
+    }
+}
+
+@include phone-land {
+    .footer-container {
+        padding-left: 30px;
+        width: 70vw;
+
+        .card-tag {
+            font-size: .6em;
+        }
+
+        .col-2 {
+            width: 60%;
+        }
+
+        .card-main-content,
+        .card-email-content,
+        .footer-links {
+            font-size: .8em;
+        }
+    }
+}
+@include ipad {
+    .footer-container {
+        padding-left: 30px;
+        width: 70vw;
+
+        .card-tag {
+            font-size: .6em;
+        }
+
+        .col-2 {
+            width: 60%;
+        }
+
+        .card-main-content,
+        .card-email-content,
+        .footer-links {
+            font-size: .8em;
+        }
+    }
+}

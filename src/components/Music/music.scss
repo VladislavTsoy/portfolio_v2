@@ -1,0 +1,61 @@
+@import '../../styles/utilities';
+
+.spot-project-img {
+    width: 100vw;
+    height: 70vh;
+    margin-top: 70px;
+    background: url('https://s3-us-west-1.amazonaws.com/music-stream-vschool/spot3.png');
+    background-size: cover;
+    background-position: center top;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.second-project-img {
+    width: 100vw;
+    height: 200vh;
+    background: url('https://s3-us-west-1.amazonaws.com/music-stream-vschool/spot1.png');
+    background-size: cover;
+}
+
+.music-link {
+    position: absolute;
+    left: 70vw;
+    top: 150vh;
+}
+
+@include phone {
+    .spot-project-img {
+        height: 200px;
+    }
+
+    .second-project-img {
+        margin-top: 50px;
+        height: 400px;
+    }
+    .music-link {
+        top: 80vh;
+        left: 60vw;
+    }
+}
+
+@include phone-land {
+    .music-link {
+        position: absolute;
+        left: 60vw;
+    }
+}
+
+@include ipad {
+    .spot-project-img {
+        height: 450px;
+    }
+
+    .second-project-img {
+        margin-top: 50px;
+        height: 900px;
+    }
+    .music-link {
+        top: 80vh;
+        left: 60vw;
+    }
+}
