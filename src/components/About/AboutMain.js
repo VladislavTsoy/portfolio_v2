@@ -23,8 +23,9 @@ const AboutMain = () => {
                     <div className='card-main-content'>
                     I served 5 years in the Marine Corps as a Network Engineer.  
                     After my term I continued my education at Rutgers University, where I studied Computer Science and developed a passion for software development.
+                    I began my professional career in 2019 primarily focusing on front-end development.
                     Aside from my passion for programming. I enjoy my coffee black.
-                    I'm not a big fan of IPA's.
+                    Big fan of IPA's.
                     I also have a hyperactive terrier-shih tzu, who doesn't look like a terrier nor a shih tzu.
                     Anyway, let's build something incredible together.
                     </div>

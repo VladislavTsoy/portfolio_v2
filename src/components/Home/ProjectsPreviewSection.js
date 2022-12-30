@@ -20,11 +20,11 @@ const ProjectsSection = () => {
                     </div>
                 </div>
                 <div className='design-handler-wrapper'>
-                    <Link to='/designs'>
+                    {/* <Link to='/designs'>
                         <h3>
                             See designs here
                         </h3>
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
             <div className='preview-projects-title'>

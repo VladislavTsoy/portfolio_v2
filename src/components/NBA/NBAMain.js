@@ -16,9 +16,7 @@ const NBAMain = () => {
                 <PageHeader info={'Crafted a digital platform for NBA fans.'} />
             </div>
             <OverviewTemplate nums={'P3'} title={'overview'} desc={'NBA Daily delivers trending news in the the basketball realm using news API, as well as player statistics, bios, and highlights.  You can also view teams and team rosters.'}/>
-            <div id='nba-wallpaper'></div>
             <OverviewTemplate nums={'T3'} title={'technology'} desc={`This digital platform is a front end applicationg created using React, Redux, and Material-UI.  I consumed API's from newsapi.org and several NBA player API's.`} />
-            <div id='nba-wallpaper-2'></div>
             <OverviewTemplate nums={'##'} title={'challenges'} desc={`The toughest challenge I faced creating this platform was chaining API requests.  One of the NBA API's only contained player bio's while another container player statistics.  To resolve the issues I created a chained API get request, storing results in a promise array before making a follow up call to the secondary API.`}/>            
             <NextTemplate info={'Next: See my instagram clone'} link={'/finstagram'}/>
             <Footer />
